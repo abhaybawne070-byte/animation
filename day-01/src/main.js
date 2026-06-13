@@ -15,3 +15,17 @@ gsap.fromTo(
       y:200
      },
 )
+
+// how to costumize  costume properties
+
+     const obj = {
+        a:0
+     };
+
+     gsap.to(obj , {
+        a:100,
+        onUpdate : () => {
+            console.log(obj.a);
+        },
+     })
+    
