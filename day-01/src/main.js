@@ -3,10 +3,15 @@ import './style.css'
 
  
 
-gsap.to('.box',{
-    delay:0.6,
-    x : 100,
-    duration : 2,
-    
-
-})
+gsap.fromTo(
+    '.box',
+    {
+      x:0,
+    },
+    {
+      delay:0.6,
+      direction:1,
+      x:400,
+      y:200
+     },
+)
