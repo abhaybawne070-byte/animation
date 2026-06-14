@@ -1,0 +1,14 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+html,
+body{
+  background-color: #555;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
