@@ -3,13 +3,25 @@ import './style.css'
 
 
 
+// gsap.to(".box",{
+//     x : 500,
+//     delay:3,
+//     direction:0.6,
+//     ease : "power2.inOut",
+
+//     onUpdate: ()=>{
+//         console.log("Frames")
+//     }
+// })
+
+
 gsap.to(".box",{
-    x : 500,
-    delay:3,
-    direction:0.6,
+    x : 100,
+    duration : 0.6 , 
+    delay : 1.8 , 
     ease : "power2.inOut",
 
-    onUpdate: ()=>{
-        console.log("Frames")
+    onComplete : ()=> {
+        console.log("animation complete!")
     }
 })
