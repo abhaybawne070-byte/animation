@@ -3,16 +3,13 @@ import './style.css'
 
 
 
-gsap.set(".box",{
-    x: -300,
-})
+gsap.to(".box",{
+    x : 500,
+    delay:3,
+    direction:0.6,
+    ease : "power2.inOut",
 
-gsap.to('.box',{
-    x:1300,
-    duration:1.8,
-    delay:0.6,
-    ease : "power2.inOut",   
-    repeat: -1,
-    
+    onStart: ()=>{
+        console.log("Animation start !!")
+    }
 })
- 
