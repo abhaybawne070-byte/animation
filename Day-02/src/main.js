@@ -3,12 +3,16 @@ import './style.css'
 
 
 
+gsap.set(".box",{
+    x: -300,
+})
+
 gsap.to('.box',{
-    x:300,
-    duration:2,
+    x:1300,
+    duration:1.8,
     delay:0.6,
-    ease : "power4.inOut",   
+    ease : "power2.inOut",   
     repeat: -1,
-    yoyo: true
+    
 })
  
