@@ -9,7 +9,7 @@ gsap.to(".box",{
     direction:0.6,
     ease : "power2.inOut",
 
-    onStart: ()=>{
-        console.log("Animation start !!")
+    onUpdate: ()=>{
+        console.log("Frames")
     }
 })
