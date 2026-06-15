@@ -6,7 +6,7 @@ import './style.css'
 
 
 
-// position parameters - "<number"
+// position parameters - "-=number"
 
 const tl = gsap.timeline();
   
@@ -28,5 +28,5 @@ tl.to(".box",{
   duration : 1.3,
   ease : "power4.out",
 }, 
-  "<0.3",
+  "-=0.8",
 )
