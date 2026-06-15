@@ -1,6 +1,8 @@
 import gsap from 'gsap'
 import './style.css'
 
+
+
 gsap.to(".box",{
     x:100,
     direction:0.6,
@@ -12,16 +14,16 @@ gsap.to(".box",{
     }
 })
 
-// gsap.to(".box",{
-//     x : 500,
-//     delay:3,
-//     direction:0.6,
-//     ease : "power2.inOut",
+gsap.to(".box",{
+    x : 500,
+    delay:3,
+    direction:0.6,
+    ease : "power2.inOut",
 
-//     onUpdate: ()=>{
-//         console.log("Frames")
-//     }
-// })
+    onUpdate: ()=>{
+        console.log("Frames")
+    }
+})
 
 
 gsap.to(".box",{
@@ -34,3 +36,4 @@ gsap.to(".box",{
         console.log("animation complete!")
     }
 })
+
