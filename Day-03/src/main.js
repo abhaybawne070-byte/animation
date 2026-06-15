@@ -6,7 +6,7 @@ import './style.css'
 
 
 
-// position parameters - "LABELS"
+// position parameters - "LABELS-=NUM" "LABELS+=NUM"
 
 const tl = gsap.timeline();
   
@@ -20,7 +20,7 @@ tl.to(".box",{
   duration:1.3,
   ease : "power4.out",
 },
-  "LABELS"
+  "LABELS+=0.6"
 ).to(".box2",{
   x : 500 ,
   duration: 1.3 ,
@@ -30,5 +30,5 @@ tl.to(".box",{
   duration : 1.3,
   ease : "power4.out",
 }, 
-  "LABELS",
+  "LABELS-=0.6",
 )
