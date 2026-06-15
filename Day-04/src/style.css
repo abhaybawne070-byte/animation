@@ -1,0 +1,33 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  overflow: hidden;
+}
+
+.box,.box1,.box2,.box3{
+  height: 100px;
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.box{
+  background-color: red;
+}
+.box1{
+  background-color: rgb(0, 255, 13);
+}
+.box2{
+  background-color: rgb(23, 130, 192);
+}
+.box3{
+  background-color: rgb(130, 20, 147);
+}
+
+button{
+ margin-top: 1rem;
+ font-size: 2rem;
+}
