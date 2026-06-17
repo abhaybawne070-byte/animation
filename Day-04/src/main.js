@@ -1,5 +1,9 @@
-import gsap from 'gsap'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import './style.css'
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -63,16 +67,32 @@ import './style.css'
 
 // this call nexted timeline
 
-// Loading timeline -
-const loadingTimeline = ()=>{
-  return gsap.timeline().to(Element,{})
-}
+// //Loading timeline -
+// const loadingTimeline = ()=>{
+//   return gsap.timeline().to(Element,{})
+// }
 
-// Navbar timeline -
- const NevbarTimeline = ()=>{
-  return gsap.timeline().to(Element,{})
- }
+// // Navbar timeline -
+//  const NevbarTimeline = ()=>{
+//   return gsap.timeline().to(Element,{})
+//  }
 
- // Create a master timeline to control all the timeline
- const master = gsap.timeline();
- master.add(loadingTimeline,"-=0.4").add(NevbarTimeline)
+//  // Create a master timeline to control all the timeline
+//  const master = gsap.timeline();
+//  master.add(loadingTimeline,"-=0.4").add(NevbarTimeline)
+
+
+
+/* scrollTrigger - */ 
+
+gsap.to(".box",{
+  x: 500,
+  // duration:1.3,
+  ease : 'power4.out',
+  scrollTrigger : {
+    trigger : '.box',
+    start : "top 30%",
+    end : "top 30%",
+    scrub : true,    
+  }
+})
